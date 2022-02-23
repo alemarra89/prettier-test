@@ -7,10 +7,10 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "precommit": "lint-staged",
     "eslint": "eslint --ext .js,.jsx,.ts,.tsx",
-    "prettier": "prettier '**/*.js'"
+    "prettier": "prettier --write 'my-app/**/*.{ts,tsx}' 'MyApp/**/*.{ts,tsx}'"
   },
   "lint-staged": {
-    "*.js": [
+    "*.ts(x)": [
       "prettier --write",
       "git add"
     ]
