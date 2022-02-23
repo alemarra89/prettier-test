@@ -5,15 +5,17 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "precommit": "lint-staged",
     "eslint": "eslint --ext .js,.jsx,.ts,.tsx",
+    "prepare": "husky install",
     "prettier": "prettier --write 'my-app/**/*.{ts,tsx}' 'MyApp/**/*.{ts,tsx}'"
   },
   "lint-staged": {
     "*.ts(x)": [
       "prettier --write",
       "git add"
-    ]
+    ],
+    "*.js": "eslint --cache --fix",
+    "*.{js,css,md}": "prettier --write"
   },
   "repository": {
     "type": "git",
