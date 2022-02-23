@@ -1,0 +1,34 @@
+{
+  "name": "prettier-test",
+  "version": "1.0.0",
+  "description": "Progetto per testare la configurazione di eslint prettier husky pre-commit",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "precommit": "lint-staged",
+    "eslint": "eslint --ext .js,.jsx,.ts,.tsx",
+    "prettier": "prettier '**/*.js'"
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alemarra89/prettier-test.git"
+  },
+  "author": "Alessandro Marra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alemarra89/prettier-test/issues"
+  },
+  "homepage": "https://github.com/alemarra89/prettier-test#readme",
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.3.4",
+    "prettier": "^2.5.1"
+  }
+}
