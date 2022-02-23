@@ -10,11 +10,8 @@
     "prettier": "prettier --write 'my-app/**/*.{ts,tsx}' 'MyApp/**/*.{ts,tsx}'"
   },
   "lint-staged": {
-    "*.ts(x)": [
-      "prettier --write",
-      "git add"
-    ],
-    "*.js": "eslint --cache --fix",
+    "*.ts(x)": "prettier --write",
+    "*.js(x)": "eslint --cache --fix",
     "*.{js,css,md}": "prettier --write"
   },
   "repository": {
