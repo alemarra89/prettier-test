@@ -1,6 +1,6 @@
 module.exports = {
   root: true,
-  extends: '@react-native-community',
+  extends: ['@react-native-community', 'plugin:prettier/recommended'],
   parser: '@typescript-eslint/parser',
   plugins: ['@typescript-eslint', 'prettier'],
   overrides: [
@@ -10,11 +10,7 @@ module.exports = {
         '@typescript-eslint/no-shadow': ['error'],
         'no-shadow': 'off',
         'no-undef': 'off',
-        'no-unused-vars': 'off',
-        '@typescript-eslint/no-unused-vars': [
-          'error',
-          { argsIgnorePattern: '^_', ignoreRestSiblings: true },
-        ],
+        '@typescript-eslint/no-unused-vars': ['error'],
       },
     },
   ],
