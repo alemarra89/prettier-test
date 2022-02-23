@@ -11,6 +11,7 @@ module.exports = {
         'no-shadow': 'off',
         'no-undef': 'off',
         '@typescript-eslint/no-unused-vars': ['error'],
+        'react/jsx-closing-bracket-location': 1,
       },
     },
   ],

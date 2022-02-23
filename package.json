@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "eslint": "eslint --ext .js,.jsx,.ts,.tsx",
     "prepare": "husky install",
-    "prettier": "prettier --write 'my-app/**/*.{ts,tsx}' 'MyApp/**/*.{ts,tsx}'"
+    "prettier": "prettier --write '**/*.{js,jsx,ts,tsx}'"
   },
   "lint-staged": {
     "*.js(x)": "eslint --cache --fix",
